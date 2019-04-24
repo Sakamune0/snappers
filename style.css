@@ -1,0 +1,193 @@
+/* */
+
+/*ページの余白をゼロに設定する*/
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #cccccc;
+  color: #333333;
+  font-size: 15px;
+  line-height: 2;
+}
+
+/*リセットCSS */
+
+/*見出しと段落の上のマージンをなくす*/
+p,h1,h2,h3,h4,h5,h6 {
+  margin-top: 0;
+}
+
+
+/*画像の下部の余白をなくす*/
+img {
+  vertical-align:bottom;
+}
+
+/*リストの余白をなくす*/
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+
+/*訪問前/後のリンク文字の色を指定するor マウスポインターを置いたときだけ、リンク文字の下図の表示/非表示を指定する*/
+a {
+  color: #3583aa;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #788d98;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+/*ここから各要素のstyle設定に入る*/
+
+
+/*headerエリア*/
+header{
+    /* ヘッダーエリアのサイズを設定する。*webサイトの標準的な横幅サイズです*/
+    width: 960px;
+    height: 100px;
+    /* ヘッダーエリアの位置を設定する。*/
+      margin: 0 auto;
+}
+
+/* ロゴとメニューの位置を指定する。そして、ロゴとメニューの位置を調整する*/
+
+.logo {
+  float: left;
+  margin-top: 50px;
+}
+
+.global-nav {
+  float: right;
+  margin-top: 60px;
+}
+
+/* メニュー項目を横に並べる メニュー項目の細部を調整する*/
+.global-nav li {
+  float: left;
+  margin: 0 20px;
+  font-size: 20px;
+  list-style: none;
+  font-family: 'Bitter', serif;
+}
+
+/* メニュー文字のリンクに色を設定する*/
+.global-nav li a {
+  color: #ffffff;
+}
+
+/* メニュー文字の下図を設定する*/
+.global-nav li a:hover {
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 3px;
+  text-decoration: none;
+}
+/*headerエリア終わり*/
+
+
+/*wrapperエリア始まり*/
+#wrap{
+/* floatプロパティで指定された要素の回り込みを解除する*/
+    clear: both;
+}
+
+.contents{
+     width: 960px;
+     /* wrapperエリアの位置を設定する。*/
+        margin: 0 auto;
+    }
+
+
+/*wrapperエリア終了*/
+
+
+/*フッターエリア始まり*/
+footer{
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer small{
+    font-size: 12px;
+}
+/*フッターエリア終了*/
+
+
+/*インデックスページのh1だけに装飾を設定する*/
+#index h1{
+    /*文字サイズと行間を指定する*/
+    font-size: 100px;
+    line-height: 1; 　/*行間を詰める*/
+
+    /*文字色と書体を指定する*/
+    font-family: 'Bitter', serif;
+    color: #ffffff;
+    /*②見出しの下の余白を設定する*/
+     margin-top: 150px;
+}
+
+/*①見出しの上の余白を調整する*/
+#index　.contents{
+    margin-top: 150px;
+}
+
+/*本文を調整する　③文字サイズを指定する*/
+#index p {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.btn a {
+/*④ボタン背景色と文字の装飾*/
+  background-color: #009cd3;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: 'Bitter', serif;
+ /*⑤ボタンサイズ調整*/
+  width: 185px;
+   /*⑥ブロックレベルに*/
+  display: block;
+   /*⑦文字位置、ボタンの角、枠線設定*/
+  text-align: center;
+  line-height: 50px;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: 3px solid #009cd3;
+}
+
+  /*⑧マウスを置いたときのデザイン*/
+.btn a:hover {
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #009cd3;
+}
+
+#index footer {
+  width: 960px;
+  margin: 150px auto 0 auto;
+  text-align: left;
+}
+
+#index {
+  background-image: url(../images/bg-index.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+  /*背景画像について*/
+#index {
+  background-image: url(../images/bg-index.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
