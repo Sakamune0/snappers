@@ -96,8 +96,9 @@ header {
 #wrap{
 /* floatプロパティで指定された要素の回り込みを解除する*/
     clear: both;
-    /*background-color: #ffffff; /*aboutエリアの際に追記記載。→コンテンツの背景を白く*/
-    /*margin-top: 220px; /*aboutエリアの際に追記記載→コンテンツエリアの上部に余白を設定する*/
+    background-color: #ffffff; /*aboutHTMLの際に追記記載。→コンテンツの背景を白く*/
+    margin-top: 220px; /*aboutHTMLエリアの際に追記記載→コンテンツエリアの上部に余白を設定する*/
+    padding: 35px 0;/*aboutHTMLエリアの際に追記記載→コンテンツエリアの内側に余白を設定する*/
 }
 
      /* wrapperエリアの位置を設定する。*/
@@ -115,6 +116,7 @@ footer {
   text-align: center;
   color: #ffffff;
   padding: 20px 0;
+  background-color: #767671;
 }
 
 footer small {
@@ -124,16 +126,18 @@ footer small {
 
 
 /*インデックスページのh1だけに装飾を設定する*/
+
 #index h1{
     /*文字サイズと行間を指定する*/
     font-size: 100px;
     line-height: 1;　/*行間を詰める*/
 
     /*文字色と書体を指定する*/
-      color: #ffffff;
-      font-family: 'Bitter', serif;
+    color: #ffffff;
+    font-family: 'Bitter', serif;
     /*②見出しの下の余白を設定する*/
-     margin-top: 150px;
+     margin-bottom: 50px;
+     border: none; /*aboutHTMLエリアの際に追記記載→下線削除*/
 }
 
 /*①見出しの上の余白を調整する*/
@@ -176,15 +180,9 @@ footer small {
   width: 960px;
   margin: 150px auto 0 auto;
   text-align: left;
+  background-color: transparent;  /*aboutHTMLエリアの際に追記記載→背景色削除*/
 }
 
-#index {
-  background-image: url(../images/bg-index.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: cover;
-}
 
   /*背景画像について*/
 #index {
@@ -194,6 +192,7 @@ footer small {
   background-attachment: fixed;
   background-size: cover;
 }
+
 
 /*aboutページのCSS*/
 /*背景画像*/
@@ -205,4 +204,86 @@ footer small {
   background-size: 100% auto;   /*全体を覆うのではなく、領域に収まるように表示したい。*/
 }
 
+.main-center{
+    width: 940px;  /*横幅20px引いている。*/
+    margin: 0 auto;
+}
 
+/*見出しの装飾*/
+.main-center h1{
+    font-family: 'Bitter', serif;
+    font-size: 36px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.main-center h2{
+    font-family: 'Bitter', serif;
+    font-size: 24px;
+}
+
+/*「疑似要素」でiconクラス前で長方形のアイコンを作成した。*/
+.icon:before {
+  content: "";
+  padding-right: 10px;
+  border-left: 7px solid #9cb4a4;
+}
+
+/*テキスト幅を指定、テキストの位置を指定*/
+#about .profile-txt {
+  width: 540px;
+  float: left;
+}
+
+/*テキストの一部を太字に設定する。*/
+#about .profile-txt span {
+  font-weight: bold;
+}
+/*プロフィールの画像を指定する*/
+#about .profile-image {
+  float: right;
+}
+
+/*上記でfloatを利用したため、浮いた。レイアウトを調整する*/
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/*セクション間の余白を調整する*/
+section {
+  margin-bottom: 35px;
+}
+
+
+/*ここから表の装飾*/
+/*見出しセルの横幅・背景色・上下幅を指定する*/
+#about .career th{
+    width: 240px;
+    background-color: #f0f0f0;
+    padding: 12px 0;
+/*見出しセルの罫線を装飾する*/
+    border: 1px solid #cccccc;
+}
+
+/*データセルの横幅を指定する*/
+#about .career td{
+    width: 660px;
+    /*データセルの上下幅と罫線を指定する*/
+    padding: 12px 0 12px 40px;
+    border: 1px solid #cccccc;
+}
+
+/*セルの隙間を指定する*/
+table{
+    border-spacing: 0;
+    /*罫線の表示方法を指定する。*/
+    border-collapse: collapse;
+}
+
+/*indexページの表示でのエラーを解除する*/
+#index #wrap{
+    background-color: transparent; /*透明を表す*/
+    margin-top: 0;  /*余白の設定を解除*/
+    padding: 0;
+}
