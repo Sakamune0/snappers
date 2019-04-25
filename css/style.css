@@ -49,12 +49,12 @@ a:hover {
 
 
 /*headerエリア*/
-header{
     /* ヘッダーエリアのサイズを設定する。*webサイトの標準的な横幅サイズです*/
-    width: 960px;
-    height: 100px;
     /* ヘッダーエリアの位置を設定する。*/
-      margin: 0 auto;
+header {
+  width: 960px;
+  height: 100px;
+  margin: 0 auto;
 }
 
 /* ロゴとメニューの位置を指定する。そして、ロゴとメニューの位置を調整する*/
@@ -96,26 +96,29 @@ header{
 #wrap{
 /* floatプロパティで指定された要素の回り込みを解除する*/
     clear: both;
+    /*background-color: #ffffff; /*aboutエリアの際に追記記載。→コンテンツの背景を白く*/
+    /*margin-top: 220px; /*aboutエリアの際に追記記載→コンテンツエリアの上部に余白を設定する*/
 }
 
-.contents{
-     width: 960px;
      /* wrapperエリアの位置を設定する。*/
-        margin: 0 auto;
-    }
+.content {
+  width: 960px;
+  margin: 0 auto;
+}
 
 
 /*wrapperエリア終了*/
 
 
 /*フッターエリア始まり*/
-footer{
-    text-align: center;
-    padding: 20px 0;
+footer {
+  text-align: center;
+  color: #ffffff;
+  padding: 20px 0;
 }
 
-footer small{
-    font-size: 12px;
+footer small {
+  font-size: 12px;
 }
 /*フッターエリア終了*/
 
@@ -124,18 +127,18 @@ footer small{
 #index h1{
     /*文字サイズと行間を指定する*/
     font-size: 100px;
-    line-height: 1; 　/*行間を詰める*/
+    line-height: 1;　/*行間を詰める*/
 
     /*文字色と書体を指定する*/
-    font-family: 'Bitter', serif;
-    color: #ffffff;
+      color: #ffffff;
+      font-family: 'Bitter', serif;
     /*②見出しの下の余白を設定する*/
      margin-top: 150px;
 }
 
 /*①見出しの上の余白を調整する*/
-#index　.contents{
-    margin-top: 150px;
+#index .content {
+  margin-top: 150px;
 }
 
 /*本文を調整する　③文字サイズを指定する*/
@@ -147,19 +150,19 @@ footer small{
 .btn a {
 /*④ボタン背景色と文字の装飾*/
   background-color: #009cd3;
-  color: #ffffff;
-  font-size: 20px;
-  font-family: 'Bitter', serif;
+   color: #ffffff;
+   font-size: 20px;
+   font-family: 'Bitter', serif;
  /*⑤ボタンサイズ調整*/
-  width: 185px;
+   width: 185px;
    /*⑥ブロックレベルに*/
-  display: block;
+   display: block;
    /*⑦文字位置、ボタンの角、枠線設定*/
-  text-align: center;
-  line-height: 50px;
-  margin-top: 20px;
-  border-radius: 5px;
-  border: 3px solid #009cd3;
+   text-align: center;
+   line-height: 50px;
+   margin-top: 20px;
+   border-radius: 5px;
+   border: 3px solid #009cd3;;
 }
 
   /*⑧マウスを置いたときのデザイン*/
@@ -197,8 +200,9 @@ footer small{
 #about {
   background-image: url(../images/bg-about.jpg);
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center top; /*背景画像の表示位置を設定する*/
   background-attachment: fixed;
   background-size: 100% auto;   /*全体を覆うのではなく、領域に収まるように表示したい。*/
 }
+
 
