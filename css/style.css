@@ -129,16 +129,16 @@ footer small {
 
 #index h1{
     /*文字サイズと行間を指定する*/
-    font-size: 100px;
-    line-height: 1;　/*行間を詰める*/
-
     /*文字色と書体を指定する*/
+    /*行間を詰める*/
+    font-size: 100px;
+    line-height: 1;
     color: #ffffff;
     font-family: 'Bitter', serif;
     /*②見出しの下の余白を設定する*/
      margin-bottom: 50px;
      border: none; /*aboutHTMLエリアの際に追記記載→下線削除*/
-}
+    }
 
 /*①見出しの上の余白を調整する*/
 #index .content {
