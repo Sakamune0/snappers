@@ -191,3 +191,14 @@ footer small{
   background-attachment: fixed;
   background-size: cover;
 }
+
+/*aboutページのCSS*/
+/*背景画像*/
+#about {
+  background-image: url(../images/bg-about.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: 100% auto;   /*全体を覆うのではなく、領域に収まるように表示したい。*/
+}
+
