@@ -287,3 +287,55 @@ table{
     margin-top: 0;  /*余白の設定を解除*/
     padding: 0;
 }
+
+/*portfolioページのCSS*/
+
+/*背景画像を設定する*/
+#portfolio {
+  background-image: url(../images/bg-portfolio.jpg);
+  background-repeat: no-repeat;
+  background-position: center top; /*背景画像の表示位置を設定する*/
+  background-attachment: fixed;
+  background-size: 100% auto;   /*全体を覆うのではなく、領域に収まるように表示したい。*/
+}
+
+.main {
+  width: 700px;
+  margin: 0 10px;
+  float: left;
+}
+
+/*カラム幅は計960pxになるように調整している*/
+.sidebar{
+  width: 200px;
+  margin: 0 10px 0 30px;
+  font-family: 'Bitter', serif;
+}
+
+/*画像の透明度を設定する*/
+a img:hover{
+  opacity: 0.8;
+}
+
+
+.sidebar{
+  width: 200px;
+  margin: 0 10px 0 30px;
+  float: right;
+  font-family: 'Bitter', serif;
+}
+
+.sidebar h2{
+  margin-bottom: 10px;
+}
+
+/*リストの見た目を整える*/
+.sidebar ul{
+  font-size: 16px;
+  margin-left: 20px;
+}
+
+/*メニュー項目の色を変更する、リンクカラーにしたくないので*/
+.sidebar ul a{
+  color: #333333;
+}
