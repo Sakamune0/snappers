@@ -2,44 +2,52 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>風景写真家「SNAPPERS」official Website</title>
-    <link href="https://fonts.googleapis.com/css?family=Bitter:400,700" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet"><!--googleフォント-->
-    <link rel="icon" type="image/png" sizes="128x128" href="images/style.css"> <!--ファビコン-->
+    <link href="https://fonts.googleapis.com/css?family=Bitter:400,700" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <!--googleフォント-->
+    <link rel="icon" type="image/png" sizes="128x128" href="images/style.css" />
+    <!--ファビコン-->
 </head>
-<body id="index"> <!--id属性。トップページをほかのページと区別するための目印として機能します。ページごとに異なる指定ができる -->
 
-<!--header始まり -->
-<header>
-    <div class="logo">
-        <a href="index.html"><img src="images/logo.png" alt="SNAPPERS"></a>　<!--ロゴにトップページのリンクを設定する -->
+<body id="index">
+    <!--id属性。トップページをほかのページと区別するための目印として機能します。ページごとに異なる指定ができる -->
+
+    <!--header始まり -->
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="SNAPPERS" /></a>
+            <!--ロゴにトップページのリンクを設定する -->
+        </div>
+        <nav>
+            <ul class="global-nav">
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <!--ナビコンテンツはリンク化-->
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--header終わり-->
+
+    <!--wrapper始まり-->
+    <div id="wrap">
+        <div class="content">
+            <h1>Life is beautiful, Snap!Snap!</h1>
+            <p>
+                このWebサイトは「SNAPPERS」という架空の写真家のポートフォリオサイトです。<br />HTMLとCSSを学びながら完成を目指しました。
+            </p>
+            <p class="btn"><a href="portfolio.html">My Portfolio</a></p>
+        </div>
     </div>
-    <nav>
-        <ul class="global-nav">
-            <li><a href="portfolio.html">Portfolio</a></li>  <!--ナビコンテンツはリンク化-->
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-<!--header終わり-->
+    <!--wrapper終わり-->
 
-<!--wrapper始まり-->
-<div id="wrap">
-    <div class="content">
-        <h1>Life is beautiful, Snap!Snap!</h1>
-        <p>このWebサイトは「SNAPPERS」という架空の写真家のポートフォリオサイトです。<br>HTMLとCSSを学びながら完成を目指しました。</p>
-        <p class="btn"><a href="portfolio.html">My Portfolio</a></p>
-    </div>
-</div>
-<!--wrapper終わり-->
-
-<!-- footer始まり-->
-<footer>
-    <small>(C) 2017 Hattori-studio.</small>
-</footer>
-<!-- footer終わり-->
-
+    <!-- footer始まり-->
+    <footer>
+        <small>(C) 2017 Hattori-studio.</small>
+    </footer>
+    <!-- footer終わり-->
 </body>
+
 </html>
